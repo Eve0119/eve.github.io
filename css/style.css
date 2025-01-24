@@ -454,32 +454,13 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-    background: url('../img/file.png') calc(100% + 250px) bottom no-repeat;
+    background: url('../img/file.png') calc(70% + 250px) bottom no-repeat;
     background-size: contain;
     padding:110px 0 100px 0;
     height:auto;
     background-color: #EEEEEE;
 }
-@media (max-width: 440px){
-	.hero {
-	    background: url('../img/file.png') calc(100% + 250px) bottom no-repeat;
-	    background-size: contain;
-	    padding:110px 0 100px 0;
-	    height:auto;
-	    background-color: #EEEEEE;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	}
-	 .hero h1 {
-	        font-size: 50px;
-		letter-spacing: -8px;
-		margin: 0;
-		font-weight: 600;
-		line-height: 95px;
-		text-transform: uppercase;
-	}
-}
+
 .hero h1 {
 	font-size: 120px;
 	letter-spacing: -8px;
@@ -1257,7 +1238,25 @@ ul.slides li {
 	    padding-bottom: 40px;
 	}
 }
-
+@media screen and (max-width: 440px){
+	.hero {
+	    background: url('../img/file.png') bottom no-repeat;
+	    background-size: contain;
+	    height:auto;
+	    background-color: #EEEEEE;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	 .hero h1 {
+	        font-size: 70px;
+		letter-spacing: -8px;
+		margin: 0;
+		font-weight: 600;
+		line-height: 95px;
+		text-transform: uppercase;
+	}
+}
 .rotate {
     color: #000000; /* Replace with your desired color */
     margin-left: 10px; /* Adjust the value as needed */
